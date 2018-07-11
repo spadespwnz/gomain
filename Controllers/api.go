@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/globalsign/mgo"
 	"net/http"
+	"os"
 )
 
 type (
@@ -15,7 +16,13 @@ type (
 )
 
 func NewApiController() *ApiController {
-	sess, err := mgo.Dial("mongodb://127.0.0.1:27017")
+	var dbUrl string = ""
+	if os.Getenv("MONGODB_URI") != "" {
+		dbUrl = os.Getenv("MONGODB_URI")
+	} else {
+		dbUrl = "mongodb://127.0.0.1:27017"
+	}
+	sess, err := mgo.Dial(dbUrl)
 	if err != nil {
 		fmt.Printf("%s", err)
 	}
