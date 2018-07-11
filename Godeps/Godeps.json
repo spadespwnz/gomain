@@ -1,0 +1,32 @@
+{
+	"ImportPath": "Gomain",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/globalsign/mgo",
+			"Comment": "r2018.06.15",
+			"Rev": "113d3961e7311526535a1ef7042196563d442761"
+		},
+		{
+			"ImportPath": "github.com/globalsign/mgo/bson",
+			"Comment": "r2018.06.15",
+			"Rev": "113d3961e7311526535a1ef7042196563d442761"
+		},
+		{
+			"ImportPath": "github.com/globalsign/mgo/internal/json",
+			"Comment": "r2018.06.15",
+			"Rev": "113d3961e7311526535a1ef7042196563d442761"
+		},
+		{
+			"ImportPath": "github.com/globalsign/mgo/internal/sasl",
+			"Comment": "r2018.06.15",
+			"Rev": "113d3961e7311526535a1ef7042196563d442761"
+		},
+		{
+			"ImportPath": "github.com/globalsign/mgo/internal/scram",
+			"Comment": "r2018.06.15",
+			"Rev": "113d3961e7311526535a1ef7042196563d442761"
+		}
+	]
+}
