@@ -2,9 +2,6 @@
 	"ImportPath": "Gomain/app",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v80",
-	"Packages": [
-		"./..."
-	],
 	"Deps": [
 		{
 			"ImportPath": "Gomain/controllers",
